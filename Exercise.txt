@@ -1,0 +1,14 @@
+Specify the following tag categories
+
+e.g
+1.h1 /blocklevel
+
+Work
+1.Paragraph tag // block level
+2.h4 //block level
+3.span  //inline level
+4.italizing tag  //inline level
+5.Strong tag-<strong></strong>  //inline level
+6.div tag  // block level
+7.emphasis tag  // inline level
+8. a tag  //inline level
