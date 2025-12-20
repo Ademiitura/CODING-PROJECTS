@@ -1,0 +1,153 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffb703, #ffd166);
+    color: #4a2600;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 80px;
+}
+
+header img {
+    width: 60px;
+}
+
+/* Navigation links */
+nav a {
+    margin: 0 18px;
+    text-decoration: none;
+    color: #4a2600;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #4a2600;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Header Buttons */
+header button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+header button:first-of-type {
+    background: #4a2600;
+    color: #fff;
+    margin-right: 10px;
+}
+
+header button:last-of-type {
+    background: transparent;
+    border: 1.5px solid #4a2600;
+    color: #4a2600;
+}
+
+/* ================= HERO SECTION ================= */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+/* Text Content */
+section > div:first-child {
+    max-width: 520px;
+}
+
+section h2 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+section h2 span {
+    display: block;
+    font-weight: 700;
+}
+
+/* Description */
+section p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Buttons */
+section button {
+    padding: 14px 26px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+section button:first-child {
+    background: #4a2600;
+    color: #fff;
+    margin-right: 15px;
+}
+
+section button:last-child {
+    background: transparent;
+    border: 2px solid #4a2600;
+    color: #4a2600;
+}
+
+/* ================= IMAGE ================= */
+section > div:last-child img {
+    width: 420px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section > div:first-child {
+        max-width: 100%;
+    }
+
+    section h2 {
+        font-size: 40px;
+    }
+
+    section > div:last-child img {
+        width: 300px;
+        margin-top: 40px;
+    }
+}
