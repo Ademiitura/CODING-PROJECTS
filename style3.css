@@ -1,0 +1,29 @@
+*{
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+p{
+   color: blue;
+}
+
+.car{
+    color: green;
+}
+
+#boy{
+    color: yellow;
+}
+
+#unique{
+    font-weight: bold;
+}
+
+h1{
+    color: h;
+}
+
+p{
+    color: brown;
+}
